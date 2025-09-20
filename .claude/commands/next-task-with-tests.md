@@ -26,7 +26,9 @@ Documentation requirements:
 
 Completion:
 
-- Create a git commit following CLAUDE.md guidelines
+- Ensure all tests and linting pass
+- Update the TODO.md
+- Create a singular git commit that contains your changes and the update to the TODO.md file. The commit MUST follow CLAUDE.md guidelines
 - Stop and await review
 
 Remember: Plan for iteration and revision as scope becomes clearer through implementation.

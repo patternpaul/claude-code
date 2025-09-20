@@ -31,7 +31,8 @@ MUST requirements:
 - MUST flag if you made assumptions about requirements that should be verified
 - MUST note any dependencies or side effects of your changes
 - If you used any workarounds or temporary solutions, MUST call them out explicitly
+- NEVER update or fix the issues
 
 Format your response as a concise but thorough code review that a senior developer would give.
 
-Then you MUST update TODO.md with your suggestions and then create a commit based on my guidelines. I will then review your work.
+Then you MUST update TODO.md with your suggestions. Then create a commit based on my guidelines. I will then review your work.

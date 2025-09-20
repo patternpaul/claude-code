@@ -33,6 +33,11 @@
     - **Test coverage:** Add 5+ error handling tests
     - **Test cases:** Empty string, invalid chars, IIII, VV, lowercase input
     - **Validation:** npm test (33+ tests), npm run lint (0 errors), npm run test:ts
+    - **Code Review Notes from Task 3:**
+      - Subtractive notation correctly implemented with proper precedence
+      - Algorithm maintains O(n) efficiency with Map-based lookups
+      - Input validation gap creates temporary vulnerability (addressed in this task)
+      - All 28 tests passing including complex case MCMXCIV=1994
   - [ ] Task 5: Final quality check
     - **Run all validation commands:** npm test, npm run lint, npm run test:ts
     - **Success criteria:**

@@ -1,0 +1,13 @@
+node_modules/
+lib/
+dist/
+build/
+coverage/
+*.snap
+test/
+test-backup/
+.claude
+.vscode
+README.md
+CLAUDE.md
+*.md

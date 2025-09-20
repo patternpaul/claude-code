@@ -71,4 +71,50 @@ test('converts LX to 60', () => {
   assert.is(romanToNumber('LX'), 60);
 });
 
+// Subtractive notation tests
+test('converts IV to 4', () => {
+  assert.is(romanToNumber('IV'), 4);
+});
+
+test('converts IX to 9', () => {
+  assert.is(romanToNumber('IX'), 9);
+});
+
+test('converts XL to 40', () => {
+  assert.is(romanToNumber('XL'), 40);
+});
+
+test('converts XC to 90', () => {
+  assert.is(romanToNumber('XC'), 90);
+});
+
+test('converts CD to 400', () => {
+  assert.is(romanToNumber('CD'), 400);
+});
+
+test('converts CM to 900', () => {
+  assert.is(romanToNumber('CM'), 900);
+});
+
+// Complex number tests
+test('converts XIV to 14', () => {
+  assert.is(romanToNumber('XIV'), 14);
+});
+
+test('converts XLII to 42', () => {
+  assert.is(romanToNumber('XLII'), 42);
+});
+
+test('converts MCMXCIV to 1994', () => {
+  assert.is(romanToNumber('MCMXCIV'), 1994);
+});
+
+test('converts MMXXIII to 2023', () => {
+  assert.is(romanToNumber('MMXXIII'), 2023);
+});
+
+test('converts MMMCMXCIX to 3999', () => {
+  assert.is(romanToNumber('MMMCMXCIX'), 3999);
+});
+
 test.run();

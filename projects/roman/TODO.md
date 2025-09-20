@@ -3,14 +3,14 @@
 ## Goals
 
 - [ ] Create TypeScript roman numeral to number converter with full test coverage
-  - [ ] Task 1: Test infrastructure and single symbols (NEXT TASK)
+  - [x] Task 1: Test infrastructure and single symbols
     - **Directories to create:** src/roman-numerals/domain, test/roman-numerals
     - **Files to create:** Test file first (TDD approach), then implementation
     - **Test coverage:** 7 tests for single symbols (I=1, V=5, X=10, L=50, C=100, D=500, M=1000)
     - **Implementation:** Map-based lookup for symbol values
     - **Exports:** romanToNumber from src/index.ts
     - **Validation:** npm test must show 7 passing tests
-  - [ ] Task 2: Additive notation support
+  - [ ] Task 2: Additive notation support (NEXT TASK)
     - **Test coverage:** Add 10 tests for additive combinations
     - **Test cases:** II=2, III=3, VI=6, VII=7, VIII=8, XI=11, XV=15, XX=20, XXX=30, LX=60
     - **Implementation note:** Existing loop from Task 1 should already handle this

@@ -12,13 +12,13 @@
   },
   "compileOnSave": true,
   "include": ["src", "scripts", "test"],
-  "exclude":  [
+  "exclude": [
     "node_modules",
     "dist",
     "build",
     "output",
     "coverage",
     "dev-ex",
-    "**/*.spec.ts"   // Example: ignore tests in IntelliSense
+    "**/*.spec.ts" // Example: ignore tests in IntelliSense
   ]
 }

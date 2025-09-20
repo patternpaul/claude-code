@@ -1,4 +1,10 @@
+import { validateRomanNumeral } from "../validation";
+import { InvalidRomanNumeralError } from "../types";
+
 export function romanToNumber(input: string): number {
+  const normalizedInput = input.toUpperCase();
+  validateRomanNumeral(normalizedInput);
+
   const subtractivePatterns = new Map<string, number>([
     ["IV", 4],
     ["IX", 9],
@@ -21,12 +27,12 @@ export function romanToNumber(input: string): number {
   let total = 0;
   let i = 0;
 
-  while (i < input.length) {
+  while (i < normalizedInput.length) {
     // Check for 2-character subtractive patterns first
-    if (i < input.length - 1) {
-      const twoChar = input.substring(i, i + 2);
+    if (i < normalizedInput.length - 1) {
+      const twoChar = normalizedInput.substring(i, i + 2);
       const subtractiveValue = subtractivePatterns.get(twoChar);
-      
+
       if (subtractiveValue !== undefined) {
         total += subtractiveValue;
         i += 2;
@@ -35,10 +41,10 @@ export function romanToNumber(input: string): number {
     }
 
     // If no subtractive pattern, process single character
-    const currentValue = symbolValues.get(input[i]);
+    const currentValue = symbolValues.get(normalizedInput[i]);
 
     if (currentValue === undefined) {
-      throw new Error(`Invalid Roman numeral character: ${input[i]}`);
+      throw new InvalidRomanNumeralError(`Invalid Roman numeral character: ${normalizedInput[i]}`);
     }
 
     total += currentValue;

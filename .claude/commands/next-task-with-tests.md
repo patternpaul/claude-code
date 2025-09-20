@@ -1,6 +1,6 @@
 You MUST read and follow all directives in CLAUDE.md in the root directory.
 
-Your task: Complete the NEXT TASK for project $ARGUMENTS. THINK HARD and plan your work.
+Your task: Complete the NEXT TASK for project $ARGUMENTS using TDD with the SIMPLEST possible implementation.
 
 Required reading:
 
@@ -8,15 +8,24 @@ Required reading:
 - README.md (project overview)
 - TODO.md (task context)
 
-Approach:
+TDD Approach with simplicity focus:
 
 1. Analyze the NEXT TASK requirements thoroughly
-2. Create a flexible implementation plan that accounts for unknown scope
-3. Use Test-Driven Development (TDD) for all code work:
-   - Write failing tests first
-   - Implement minimal code to pass tests
-   - Refactor as needed
-4. Base all decisions on observable evidence, not assumptions
+2. Write failing tests that define the MINIMAL required behavior
+3. Implement the SIMPLEST code to make tests pass:
+   - Choose the most obvious, direct solution
+   - Avoid premature optimization or complex patterns
+   - Use standard library functions over custom implementations
+   - Write explicit, clear code over clever solutions
+4. Refactor only for clarity, not sophistication
+5. Base all decisions on observable evidence, not assumptions
+
+Implementation principles:
+
+- Red-Green-Refactor cycle with simplicity at each step
+- Tests should verify basic functionality, not edge cases initially
+- Implement only what tests require - nothing more
+- Prefer straightforward solutions that are easy to understand and debug
 
 Documentation requirements:
 
@@ -27,8 +36,8 @@ Documentation requirements:
 Completion:
 
 - Ensure all tests and linting pass
-- Update the TODO.md
-- Create a singular git commit that contains your changes and the update to the TODO.md file. The commit MUST follow CLAUDE.md guidelines
+- Update TODO.md (mark current task complete, note any follow-up items)
+- Create a singular git commit containing all changes following CLAUDE.md guidelines
 - Stop and await review
 
-Remember: Plan for iteration and revision as scope becomes clearer through implementation.
+Remember: Simple TDD means basic tests driving minimal implementations. Complexity can be added later if actually needed.

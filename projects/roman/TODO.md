@@ -22,7 +22,7 @@
     - **Implementation:** Check 2-char patterns before single chars, use Map for lookups
     - **Validation:** npm test must show 28 passing tests total
     - **Quick verify:** MCMXCIV should return 1994
-  - [ ] Task 4: Input validation and error handling (NEXT TASK)
+  - [x] Task 4: Input validation and error handling
     - **Create validation module:** src/roman-numerals/validation.ts
     - **Validation rules:**
       - Empty string check (PRIORITY - currently missing)
@@ -33,7 +33,7 @@
     - **Test coverage:** Add 5+ error handling tests
     - **Test cases:** Empty string, invalid chars, IIII, VV, lowercase input
     - **Validation:** npm test (33+ tests), npm run lint (0 errors), npm run test:ts
-  - [ ] Task 5: Final quality check
+  - [ ] Task 5: Final quality check (NEXT TASK)
     - **Run all validation commands:** npm test, npm run lint, npm run test:ts
     - **Success criteria:**
       - Add Missing JSDoc documentation

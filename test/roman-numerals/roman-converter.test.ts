@@ -117,4 +117,33 @@ test('converts MMMCMXCIX to 3999', () => {
   assert.is(romanToNumber('MMMCMXCIX'), 3999);
 });
 
+// Error handling tests
+test('throws error for empty string', () => {
+  assert.throws(() => romanToNumber(''), /Empty string is not a valid Roman numeral/);
+});
+
+test('throws error for invalid characters', () => {
+  assert.throws(() => romanToNumber('XYZ'), /Invalid character 'Y' in Roman numeral/);
+});
+
+test('throws error for 4 consecutive same symbols', () => {
+  assert.throws(() => romanToNumber('IIII'), /More than 3 consecutive 'I' symbols are not allowed/);
+});
+
+test('throws error for repeated V', () => {
+  assert.throws(() => romanToNumber('VV'), /Symbol 'V' cannot be repeated/);
+});
+
+test('throws error for repeated L', () => {
+  assert.throws(() => romanToNumber('LL'), /Symbol 'L' cannot be repeated/);
+});
+
+test('throws error for repeated D', () => {
+  assert.throws(() => romanToNumber('DD'), /Symbol 'D' cannot be repeated/);
+});
+
+test('converts lowercase input correctly', () => {
+  assert.is(romanToNumber('xiv'), 14);
+});
+
 test.run();

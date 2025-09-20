@@ -19,10 +19,7 @@ const compat = new FlatCompat({
 });
 
 export default defineConfig([
-  globalIgnores([
-    "lib/**/*",
-    "**/.claude",
-  ]),
+  globalIgnores(["lib/**/*", "**/.claude"]),
   {
     extends: fixupConfigRules(
       compat.extends(

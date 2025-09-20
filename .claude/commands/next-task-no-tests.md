@@ -1,6 +1,6 @@
 You MUST read and follow all directives in CLAUDE.md in the root directory.
 
-Your task: Complete the NEXT TASK for project $ARGUMENTS. THINK HARD and plan your work.
+Your task: Complete the NEXT TASK for project $ARGUMENTS using the SIMPLEST possible implementation.
 
 Required reading:
 
@@ -11,9 +11,18 @@ Required reading:
 Approach:
 
 1. Analyze the NEXT TASK requirements thoroughly
-2. Create a flexible implementation plan that accounts for unknown scope
-3. Ensure that the tests pass as you work
-4. Base all decisions on observable evidence, not assumptions
+2. Design the MINIMAL implementation that satisfies requirements
+3. Prioritize simplicity over optimization or future-proofing
+4. Ensure tests pass with straightforward, readable code
+5. Base all decisions on observable evidence, not assumptions
+
+Implementation principles:
+
+- Choose the most obvious, direct solution
+- Avoid premature optimization or complex patterns
+- Use standard library functions over custom implementations
+- Prefer explicit, clear code over clever solutions
+- Implement only what's needed to make tests pass
 
 Documentation requirements:
 
@@ -24,8 +33,8 @@ Documentation requirements:
 Completion:
 
 - Ensure all tests and linting pass
-- Update the TODO.md
-- Create a singular git commit that contains your changes and the update to the TODO.md file. The commit MUST follow CLAUDE.md guidelines
+- Update TODO.md (mark current task complete, note any follow-up items)
+- Create a singular git commit containing all changes following CLAUDE.md guidelines
 - Stop and await review
 
-Remember: Plan for iteration and revision as scope becomes clearer through implementation.
+Remember: Simple solutions are easier to understand, debug, and extend. Optimize for clarity and correctness over sophistication.

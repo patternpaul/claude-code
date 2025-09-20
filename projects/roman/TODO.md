@@ -3,29 +3,13 @@
 ## Goals
 
 - [ ] Create TypeScript roman numeral to number converter with full test coverage
-  - [ ] Task 1: Test infrastructure and single symbols (IN PROGRESS - NEEDS FIXES)
+  - [ ] Task 1: Test infrastructure and single symbols (NEXT TASK)
     - **Directories to create:** src/roman-numerals/domain, test/roman-numerals
     - **Files to create:** Test file first (TDD approach), then implementation
     - **Test coverage:** 7 tests for single symbols (I=1, V=5, X=10, L=50, C=100, D=500, M=1000)
     - **Implementation:** Map-based lookup for symbol values
     - **Exports:** romanToNumber from src/index.ts
     - **Validation:** npm test must show 7 passing tests
-    
-    **CODE REVIEW FINDINGS (2025-09-20):**
-    - ⚠️ CRITICAL: 5 linting errors blocking validation pipeline
-    - ❌ Using single quotes instead of required double quotes
-    - ❌ Unused parameter 'input' not prefixed with underscore
-    - ❌ Missing newline at end of files
-    - ✅ Correct TDD approach with tests first
-    - ✅ Proper directory structure following DDD
-    
-    **IMMEDIATE ACTIONS REQUIRED:**
-    1. Fix all linting errors (run npm run lint:fix) (NEXT TASK)
-    2. Manually fix remaining issues:
-       - Change 'input' to '_input' in roman-converter.ts
-       - Ensure all files end with newline
-    3. Verify with npm run lint (must show 0 errors)
-    4. Then implement romanToNumber with map-based lookup
   - [ ] Task 2: Additive notation support
     - **Test coverage:** Add 10 tests for additive combinations
     - **Test cases:** II=2, III=3, VI=6, VII=7, VIII=8, XI=11, XV=15, XX=20, XXX=30, LX=60
@@ -40,7 +24,7 @@
     - **Quick verify:** MCMXCIV should return 1994
   - [ ] Task 4: Input validation and error handling
     - **Create validation module:** src/roman-numerals/validation.ts
-    - **Validation rules:** 
+    - **Validation rules:**
       - Empty string check
       - Valid characters only (IVXLCDM)
       - No 4+ consecutive same symbols

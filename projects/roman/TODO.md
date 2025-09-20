@@ -10,12 +10,12 @@
     - **Implementation:** Map-based lookup for symbol values
     - **Exports:** romanToNumber from src/index.ts
     - **Validation:** npm test must show 7 passing tests
-  - [ ] Task 2: Additive notation support (NEXT TASK)
+  - [x] Task 2: Additive notation support
     - **Test coverage:** Add 10 tests for additive combinations
     - **Test cases:** II=2, III=3, VI=6, VII=7, VIII=8, XI=11, XV=15, XX=20, XXX=30, LX=60
     - **Implementation note:** Existing loop from Task 1 should already handle this
     - **Validation:** npm test must show 17 passing tests total
-  - [ ] Task 3: Subtractive notation and complex numbers
+  - [ ] Task 3: Subtractive notation and complex numbers (NEXT TASK)
     - **Test coverage:** Add 11 tests for subtractive patterns and complex numbers
     - **Subtractive cases:** IV=4, IX=9, XL=40, XC=90, CD=400, CM=900
     - **Complex cases:** XIV=14, XLII=42, MCMXCIV=1994, MMXXIII=2023, MMMCMXCIX=3999

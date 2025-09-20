@@ -1,4 +1,4 @@
-# What I've learned using claude code.
+# What I've learned using claude code. (v1.0)
 
 The intent of this repo is to document what I've learned while using claude code. It will contain examples of the setup I am using. I will branch off every major version where I will run through my workflow for a small project to demo this setup in action.
 

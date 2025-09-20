@@ -10,20 +10,11 @@
     - **Implementation:** Map-based lookup for symbol values
     - **Exports:** romanToNumber from src/index.ts
     - **Validation:** npm test must show 7 passing tests
-    - **CODE REVIEW FINDINGS (2025-09-20):**
-      - ⚠️ No empty string validation - returns 0 instead of error
-      - ⚠️ Case sensitive - lowercase input fails without clear error
-      - ⚠️ Loop structure will need refactoring for Task 3 subtractive notation
-      - ⚠️ Missing JSDoc documentation
-      - ✅ Map-based lookup implemented correctly
-      - ✅ Error handling for invalid characters
-      - ✅ All 7 tests passing
   - [ ] Task 2: Additive notation support (NEXT TASK)
     - **Test coverage:** Add 10 tests for additive combinations
     - **Test cases:** II=2, III=3, VI=6, VII=7, VIII=8, XI=11, XV=15, XX=20, XXX=30, LX=60
     - **Implementation note:** Existing loop from Task 1 should already handle this
     - **Validation:** npm test must show 17 passing tests total
-    - **REVIEW NOTE:** Current implementation will handle additive correctly
   - [ ] Task 3: Subtractive notation and complex numbers
     - **Test coverage:** Add 11 tests for subtractive patterns and complex numbers
     - **Subtractive cases:** IV=4, IX=9, XL=40, XC=90, CD=400, CM=900
@@ -31,7 +22,6 @@
     - **Implementation:** Check 2-char patterns before single chars, use Map for lookups
     - **Validation:** npm test must show 28 passing tests total
     - **Quick verify:** MCMXCIV should return 1994
-    - **REFACTOR REQUIRED:** Current simple loop needs restructuring for lookahead logic
   - [ ] Task 4: Input validation and error handling
     - **Create validation module:** src/roman-numerals/validation.ts
     - **Validation rules:**
@@ -46,6 +36,7 @@
   - [ ] Task 5: Final quality check
     - **Run all validation commands:** npm test, npm run lint, npm run test:ts
     - **Success criteria:**
+      - Add Missing JSDoc documentation
       - All tests passing (33+ tests)
       - Zero lint errors
       - Zero TypeScript errors

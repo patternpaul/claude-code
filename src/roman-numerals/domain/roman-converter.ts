@@ -1,6 +1,21 @@
 import { validateRomanNumeral } from "../validation";
 import { InvalidRomanNumeralError } from "../types";
 
+/**
+ * Converts a Roman numeral string to its corresponding number value.
+ *
+ * @param input - The Roman numeral string to convert (case insensitive)
+ * @returns The numeric value of the Roman numeral
+ * @throws {InvalidRomanNumeralError} When input contains invalid characters,
+ *   empty string, or violates Roman numeral rules
+ *
+ * @example
+ * ```typescript
+ * romanToNumber('XIV') // returns 14
+ * romanToNumber('MCMXCIV') // returns 1994
+ * romanToNumber('xiv') // returns 14 (case insensitive)
+ * ```
+ */
 export function romanToNumber(input: string): number {
   const normalizedInput = input.toUpperCase();
   validateRomanNumeral(normalizedInput);

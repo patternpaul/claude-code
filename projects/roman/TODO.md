@@ -2,7 +2,7 @@
 
 ## Goals
 
-- [ ] Create TypeScript roman numeral to number converter with full test coverage
+- [x] Create TypeScript roman numeral to number converter with full test coverage
   - [x] Task 1: Test infrastructure and single symbols
     - **Directories to create:** src/roman-numerals/domain, test/roman-numerals
     - **Files to create:** Test file first (TDD approach), then implementation
@@ -33,11 +33,11 @@
     - **Test coverage:** Add 5+ error handling tests
     - **Test cases:** Empty string, invalid chars, IIII, VV, lowercase input
     - **Validation:** npm test (33+ tests), npm run lint (0 errors), npm run test:ts
-  - [ ] Task 5: Final quality check (NEXT TASK)
+  - [x] Task 5: Final quality check
     - **Run all validation commands:** npm test, npm run lint, npm run test:ts
     - **Success criteria:**
       - Add Missing JSDoc documentation
-      - All tests passing (33+ tests)
+      - All tests passing (36 tests)
       - Zero lint errors
       - Zero TypeScript errors
       - romanToNumber('MCMXCIV') returns 1994

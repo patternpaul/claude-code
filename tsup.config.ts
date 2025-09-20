@@ -2,7 +2,7 @@ import { defineConfig } from "tsup";
 
 export default defineConfig([
   {
-    entry: ["src/index.js"],
+    entry: ["src/index.ts"],
     outDir: "lib",
     format: ["cjs"], // Only ESM
     target: "node20",

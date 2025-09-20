@@ -1,5 +1,11 @@
 import { InvalidRomanNumeralError } from "./types";
 
+/**
+ * Validates a Roman numeral string according to standard rules.
+ *
+ * @param input - The Roman numeral string to validate (must be uppercase)
+ * @throws {InvalidRomanNumeralError} When validation fails
+ */
 export function validateRomanNumeral(input: string): void {
   if (input === "") {
     throw new InvalidRomanNumeralError("Empty string is not a valid Roman numeral");

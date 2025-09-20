@@ -1,3 +1,46 @@
-# Roman Numerals
+# Roman Numerals - 2025-09-20
 
-- [ ] Implement the function
+## Goals
+
+- [ ] Create TypeScript roman numeral to number converter with full test coverage
+  - [ ] Set up test infrastructure (NEXT TASK)
+    - Create test/roman-numerals/ directory
+    - Create roman-converter.test.ts with uvu imports
+    - Add first failing test for "I" → 1 conversion
+    - Run npm test to verify test execution
+  - [ ] Implement type definitions
+    - Create src/roman-numerals/types.ts
+    - Define RomanNumeral as string type
+    - Define RomanSymbol type as 'I'|'V'|'X'|'L'|'C'|'D'|'M'
+    - Define ConversionResult type
+    - Add InvalidRomanNumeralError class
+  - [ ] Build core symbol mapping
+    - Create src/roman-numerals/domain/roman-converter.ts
+    - Implement symbolValues Map with I=1, V=5, X=10, L=50, C=100, D=500, M=1000
+    - Write tests for single symbol conversions
+    - Implement basic single-symbol conversion
+  - [ ] Implement additive notation
+    - Add tests for II=2, III=3, VI=6, VII=7, VIII=8, XI=11, XX=20
+    - Update converter to handle multiple symbols (left-to-right sum)
+    - Verify all additive tests pass
+  - [ ] Implement subtractive notation
+    - Add tests for IV=4, IX=9, XL=40, XC=90, CD=400, CM=900
+    - Implement look-ahead logic for two-character patterns
+    - Add tests for complex numbers: XIV=14, MCMXCIV=1994, MMXXIII=2023
+    - Verify all subtractive tests pass
+  - [ ] Add input validation
+    - Create src/roman-numerals/validation.ts
+    - Implement validateRomanNumeral function
+    - Check for invalid characters (only I,V,X,L,C,D,M allowed)
+    - Check for invalid sequences (no IIII, VV, LL, DD)
+    - Add tests for empty string, invalid chars, invalid sequences
+  - [ ] Wire up main export
+    - Update src/index.ts to export romanToNumber function
+    - Function should validate input then convert
+    - Handle uppercase input, convert lowercase to uppercase
+    - Return number for valid input, throw InvalidRomanNumeralError for invalid
+  - [ ] Verify code quality
+    - Run npm run lint and fix any issues
+    - Run npm run test:ts for TypeScript type checking
+    - Run npm test to ensure all tests pass
+    - Ensure 100% test coverage for roman-numerals module

@@ -29,8 +29,9 @@ Key constraints:
 
 Completion:
 
-- Ensure all related tests pass
-- Create a git commit following CLAUDE.md guidelines
+- Ensure all tests and linting pass
+- Update the TODO.md
+- Create a singular git commit that contains your changes and the update to the TODO.md file. The commit MUST follow CLAUDE.md guidelines
 - Stop and await review
 
 Remember: The tests define success. Your job is to make them pass with clean, minimal implementation.

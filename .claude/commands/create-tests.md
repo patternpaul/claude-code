@@ -7,6 +7,7 @@ Key constraints:
 - ONLY write tests and minimal function stubs (no implementation code)
 - NEVER mark tasks as complete
 - NEVER modify existing code outside of test files and stub creation
+- NEVER update the TODO.md file
 - Base tests only on observable code behavior, not assumptions
 - Focus on testing what's needed to complete the NEXT TASK
 
@@ -23,7 +24,8 @@ Process:
 2. Analyze the NEXT TASK requirements
 3. Write comprehensive tests that define expected behavior
 4. Create minimal function stubs for any missing functions referenced by tests
-5. Create a git commit following CLAUDE.md guidelines
-6. Stop and await review
+5. Run the tests to confirm they fail
+6. Create a git commit following CLAUDE.md guidelines
+7. Stop and await review
 
-Remember: Your role is test-first development - define what success looks like before implementation. Stubs exist only to make tests syntactically valid, not functional.
+Remember: Your role is test-first development - define what success looks like before implementation. Stubs exist only to make tests syntactically valid, not functional. NEVER code the implementation to get the tests to pass.

@@ -1,6 +1,6 @@
-YOU MUST read and follow all directives in the CLAUDE.md in the root directory. We are going to work in the functions directory. YOU MUST read and follow all directives in the CLAUDE.md in the functions directory. You will be reviewing changes in relation to project $ARGUMENTS.
+YOU MUST read and follow all directives in the CLAUDE.md in the root directory. We are going to work in the functions directory. YOU MUST read and follow all directives in the CLAUDE.md in the functions directory. You will be reviewing changes.
 
-Review the work that you (Claude) made to this codebase using LOCAL git commands and review of the files. Start from commit 85d656bb30eac470a999c3587bc6ed4dbf6ef546.
+Review the work that you (Claude) made to this codebase using LOCAL git commands and review of the files. Start from commit d86f12478a819324a80b1024aef561a561225f9a.
 
 MUST use these exact local git commands to analyze your work:
 

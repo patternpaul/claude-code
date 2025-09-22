@@ -58,3 +58,13 @@ Note that I always `/clear` and `/exit` after every command to get a fresh conte
 # CURRENT VERSION
 
 Currently in BETA as I test out an updated approach breaking out explicit roles with claude coordinating more of the work between steps. You will note CLAUDE.md have explicit role definitions and the tasks explicitly call out to those roles. Initial testing of having claude do those roles without explicitly calling them out (writting tests in a separate session than writitng the code) has yielded promising results. The explicit call out to rolls is to further improve ensuring claude doesn't do more than it should. I can also break out the guidance in CLAUDE.md per role. I was having issues where CLAUDE.md explicitly tells it to do a TDD approach and then write the code which led to the "write test" task writting the actual implementation sometimes and the "write the code" task starting off with writing the tests.
+
+# LINKS AND RANDOM NOTES
+
+## https://forgecode.dev/blog/ai-agent-best-practices/
+
+Some interesting points on prompts, especially around clarifying it's approach and critiquing itself
+
+## https://medium.com/@tl_99311/claude-codes-memory-working-with-ai-in-large-codebases-a948f66c2d7e
+
+I need to try these prompts and claude memory model

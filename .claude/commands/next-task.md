@@ -1,5 +1,7 @@
 You MUST read and follow all directives in CLAUDE.md in the root directory.
 
+**ROLE**: You will take on the role of `DEVELOPER`.
+
 Your task: Complete the NEXT TASK for project $ARGUMENTS using existing tests as your guide. THINK HARD and plan the work.
 
 Required reading:

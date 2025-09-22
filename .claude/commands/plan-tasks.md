@@ -1,5 +1,7 @@
 You MUST read and follow all directives in CLAUDE.md in the root directory.
 
+**ROLE**: You will take on the role of `ARCHITECT`.
+
 Task: Create high-level completion strategy for project $ARGUMENTS using the SIMPLEST possible approach, optimized for future Claude Code sessions.
 
 Required reading:

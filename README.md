@@ -1,4 +1,4 @@
-# What I've learned using claude code. (v1.1)
+# What I've learned using claude code. (v2-BETA)
 
 The intent of this repo is to document what I've learned while using claude code. It will contain examples of the setup I am using. I will branch off every major version where I will run through my workflow for a small project to demo this setup in action.
 
@@ -54,3 +54,7 @@ Note that I always `/clear` and `/exit` after every command to get a fresh conte
   - make any edits and commit the edits.
   - Edit the TODO list if need be
   - Go back to the top
+
+# CURRENT VERSION
+
+Currently in BETA as I test out an updated approach breaking out explicit roles with claude coordinating more of the work between steps. You will note CLAUDE.md have explicit role definitions and the tasks explicitly call out to those roles. Initial testing of having claude do those roles without explicitly calling them out (writting tests in a separate session than writitng the code) has yielded promising results. The explicit call out to rolls is to further improve ensuring claude doesn't do more than it should. I can also break out the guidance in CLAUDE.md per role. I was having issues where CLAUDE.md explicitly tells it to do a TDD approach and then write the code which led to the "write test" task writting the actual implementation sometimes and the "write the code" task starting off with writing the tests.

@@ -1,5 +1,7 @@
 You MUST read and follow all directives in CLAUDE.md in the root directory.
 
+**ROLE**: You will take on the role of `TESTER`.
+
 Your task: Write TDD tests for the NEXT TASK in project $ARGUMENTS. THINK HARD to plan the work.
 
 Key constraints:
@@ -7,7 +9,7 @@ Key constraints:
 - ONLY write tests and minimal function stubs (no implementation code)
 - NEVER mark tasks as complete
 - NEVER modify existing code outside of test files and stub creation
-- NEVER update the TODO.md file
+- NEVER update the TODO.md file unless it's a task explicitily for you.
 - Base tests only on observable code behavior, not assumptions
 - Focus on testing what's needed to complete the NEXT TASK
 
